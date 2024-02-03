@@ -112,7 +112,7 @@ hitPipe () {
 
 const config = {
     type: Phaser.AUTO,
-    width: 700,
+    width: 600,
     height: 700,
     scene: Main, // Цю сцену ми створимо на 4-му кроці
     backgroundColor: '#71c5cf',
