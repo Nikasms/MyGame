@@ -4,7 +4,7 @@ class Main extends Phaser.Scene {
     preload() {
 
 this.load.spritesheet('plane', 'assets/planesheet.png', {frameWidth: 98, frameHeight: 83});
-    this.load.image('hamster', 'assets/hamster.png');
+    this.load.image('pipe', 'assets/pipe.png');
     this.load.audio('jump', 'assets/jump.wav');
 
     }
@@ -78,7 +78,7 @@ jump() {
 
 //Функція для створення блоку труби
 addOnePipe(x, y) {
-    var pipe = this.physics.add.sprite(x, y, 'hamster');
+    var pipe = this.physics.add.sprite(x, y, 'pipe');
     pipe.setOrigin(0, 0);
     this.pipes.add(pipe);
     pipe.body.velocity.x = -300;
